@@ -96,6 +96,14 @@ declare namespace OktaJwtVerifier {
      * Read more: https://github.com/okta/okta-oidc-js/tree/master/packages/jwt-verifier#caching--rate-limiting
      */
     jwksRequestsPerMinute?: number;
+    /**
+     * JWKS Uri Override
+     *
+     * If provided, this uri will be used to fetch the JWKs. Defaults to `${issuer}/v1/keys`
+     *
+     * Read more: https://github.com/okta/okta-oidc-js/tree/master/packages/jwt-verifier#caching--rate-limiting
+     */
+    jwksUri?: string;
   }
 
   type Algorithm =
